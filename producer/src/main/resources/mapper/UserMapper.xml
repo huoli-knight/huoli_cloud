@@ -20,7 +20,7 @@
         `user_email`,
         `user_sex`,
         `user_state`,
-        `user_message`,
+        `user_message`
     </sql>
 
     <insert id="insertUser" useGeneratedKeys="true" keyProperty="userId">

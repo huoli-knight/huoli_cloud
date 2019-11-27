@@ -1,4 +1,4 @@
-package com.huoli.util.excel;
+package com.huoli.utility.excel;
 
 import com.huoli.domain.User;
 

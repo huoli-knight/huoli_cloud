@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @RequestMapping(value = "/excel")
-public interface ExcelController {
+public interface ExcelFile {
 
     @GetMapping(value = "/test")
     List<User> testData(@RequestParam("path") String path);
