@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/index.css}" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+    <div class="menu-button">
+        <button class="menu-button0">查询数据库</button>
+        <button class="menu-button1">查询指定excel文件</button>
+        <button class="menu-button2">增添数据库</button>
+        <button class="menu-button3">增添excel文件</button>
+        <button class="menu-button3">导出数据库</button>
+        <button class="menu-button3">导入数据库</button>
+    </div><hr>
+    <div>
+        <table class="table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        <input type='checkbox' class="select-all">
+                    </th>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>邮箱</th>
+                    <th>手机号</th>
+                    <th>个人信息</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+
+            </tbody>
+        </table>
+    </div>
+    <script th:src="@{http://code.jquery.com/jquery-latest.js}"></script>
+    <!--th:inline="javascript" 代替  type="text/javascript"，不然读不出来-->
+    <script th:src="@{/js/index.js}" th:inline="javascript"></script>
+</body>
+</html>
