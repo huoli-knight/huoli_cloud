@@ -1,6 +1,7 @@
 package com.huoli.controller;
 
-import com.huoli.client.ExcelControllerClient;
+import com.huoli.client.ExcelDatabaseClient;
+import com.huoli.client.ExcelFileClient;
 import com.huoli.client.ProducerClient;
 import com.huoli.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,15 @@ public class TestController {
     private ProducerClient producerClient;
 
     @Autowired
-    private ExcelControllerClient excelControllerClient;
+    private ExcelFileClient excelControllerClient;
+
+    @Autowired
+    private ExcelDatabaseClient excelDatabaseClient;
+
+    @GetMapping("/user")
+    public List<User> getAllUser(){
+        return excelDatabaseClient.getExcelDatabase();
+    }
 
     @GetMapping("/hello")
     public String helloWorld() {

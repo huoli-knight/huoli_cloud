@@ -10,5 +10,4 @@ dependencies {
     compile 'org.apache.poi:poi-ooxml:3.17'
     compile 'org.apache.poi:poi-ooxml-schemas:3.17'
     compile 'com.google.code.gson:gson:2.8.5'
-
 }

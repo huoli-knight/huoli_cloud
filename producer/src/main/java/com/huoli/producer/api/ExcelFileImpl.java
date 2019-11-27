@@ -1,8 +1,8 @@
-package com.huoli.prdducerImpl;
+package com.huoli.producer.api;
 
-import com.huoli.api.ExcelController;
+import com.huoli.api.ExcelFile;
 import com.huoli.domain.User;
-import com.huoli.util.excel.Excel;
+import com.huoli.utility.excel.Excel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/excel")
-public class ExcelControllerImpl implements ExcelController {
+public class ExcelFileImpl implements ExcelFile {
 
     @Autowired
     private Excel excel;
