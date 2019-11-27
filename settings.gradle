@@ -1,0 +1,7 @@
+rootProject.name = 'huoli_cloud'
+include 'eureka'
+include 'zuul'
+include 'producer'
+include 'excel'
+include 'producer_api'
+

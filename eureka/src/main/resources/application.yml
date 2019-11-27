@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: eureka
+
+server:
+  port: 1111
+
+eureka:
+  server:
+    evictionIntervalTimerInMs: 60000 #清除无效节点的间隔
+    enableSelfPreservation: true #自我保护
+    renewalPercentThreshold: 0.85 #触发自我保护的心跳数比例阙值
+
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka

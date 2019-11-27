@@ -1,0 +1,14 @@
+dependencies {
+    compile project (':producer_api')
+    compile 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.1.2.RELEASE'
+    compile 'org.springframework.cloud:spring-cloud-starter-config:2.1.1.RELEASE'
+    compile 'mysql:mysql-connector-java:8.0.16'
+    compile 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.0'
+    compile 'org.springframework.boot:spring-boot-starter-web:2.1.4.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-jdbc:2.1.4.RELEASE'
+    compile 'org.apache.poi:poi:3.17'
+    compile 'org.apache.poi:poi-ooxml:3.17'
+    compile 'org.apache.poi:poi-ooxml-schemas:3.17'
+    compile 'com.google.code.gson:gson:2.8.5'
+
+}

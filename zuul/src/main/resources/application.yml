@@ -1,0 +1,14 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true

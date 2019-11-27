@@ -1,0 +1,21 @@
+
+server:
+  port: 8001
+
+mybatis:
+  type-aliases-package: com.huoli.entity    # 所有Entity别名类所在包
+  mapper-locations: classpath:mapper/*Mapper.xml    # mapper映射文件
+
+spring:
+  application:
+    name: producer      #对外暴露的微服务名字
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver         # mysql驱动包
+    url: jdbc:mysql://140.143.242.131:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&serverTimezone=GMT%2B8
+    username: test
+    password: test
+
+eureka:          #客户端注册进eureka服务列表内
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
