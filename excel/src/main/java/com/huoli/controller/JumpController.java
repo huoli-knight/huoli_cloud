@@ -10,7 +10,7 @@ public class JumpController {
 
     @GetMapping("/index")
     public String jumpIndex(){
-        return "index";
+        return "redirect:/index.html";
     }
 
 }

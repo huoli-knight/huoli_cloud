@@ -2,7 +2,7 @@ $(function(){
     $(".menu-button0").click(function () {
         $.ajax({
             type:"get",
-            url:"http://localhost:8080/test/user",
+            url:"http://172.16.41.126:8080/test/user",
             async:false,
             dataType:"json",
             success:function (data) {
@@ -15,7 +15,7 @@ $(function(){
         var path = prompt("请输入文件名：","");
         $.ajax({
             type:"get",
-            url:"http://localhost:8080/test/read",
+            url:"http://172.16.41.126:8080/test/read",
             async:false,
             dataType:"json",
             data: {
@@ -41,4 +41,5 @@ $(function(){
                 "</tr>");
         }
     }
+
 });

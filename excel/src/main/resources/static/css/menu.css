@@ -1,0 +1,26 @@
+.menu-button {
+    text-align: center;
+}
+
+.menu-button button{
+    width: 150px;
+    height: 40px;
+    background: aqua;
+    border-radius: 10px;
+}
+
+.tip {
+    height: 20px;
+    text-align: center;
+}
+
+.table,.table th,tr{
+    padding: 1px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.table th {
+    width: 100px;
+    height: 20px;
+}
