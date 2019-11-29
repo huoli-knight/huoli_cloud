@@ -1,0 +1,17 @@
+.fileMessage {
+    position: relative;
+    left: 20%;
+}
+
+.fileConfig {
+    visibility: hidden;
+}
+
+.fileMessage *{
+    display: inline-block;
+}
+.menu-button {
+    text-align: center;
+    position: relative;
+    left: 20%;
+}
