@@ -38,4 +38,5 @@ subprojects {
         compile 'org.projectlombok:lombok:1.18.10'
         compile 'org.springframework.boot:spring-boot-starter-test:2.1.4.RELEASE'
     }
+    
 }
